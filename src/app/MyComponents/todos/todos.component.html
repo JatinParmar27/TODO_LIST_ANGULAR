@@ -1,0 +1,8 @@
+<div class="float-right">
+    <app-add-todo></app-add-todo>
+</div>
+
+<h5 class="bg-secondary text-light text-center rounded">Your Todos</h5>
+<div *ngFor="let todo of todos">
+    <app-todo-item [todo]="todo" (todoDelete)="DeleteTodo($event)"></app-todo-item>
+</div>
