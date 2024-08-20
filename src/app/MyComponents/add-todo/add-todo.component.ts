@@ -1,15 +1,17 @@
+import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-add-todo',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './add-todo.component.html',
   styleUrl: './add-todo.component.css'
 })
 export class AddTodoComponent {
-
-
+title: any;
+desc: any;
   onSubmit(){
     
   }
